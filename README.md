@@ -5,6 +5,7 @@ Maybe someday it will have some relevant changes...
 Clone on this location:
 
 **Windows**: `C:/Users/<USER>/AppData/Local/nvim/`
+
 Linux: `~/.nvim ? I don't now, google it`
 
 
