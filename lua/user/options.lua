@@ -28,7 +28,7 @@ local options = {
   tabstop = 2,                             -- insert 2 spaces for a tab
   cursorline = true,                       -- highlight the current line
   number = true,                           -- set numbered lines
-  relativenumber = false,                  -- set relative numbered lines
+  relativenumber = true,                  -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
 
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
@@ -51,11 +51,6 @@ vim.opt.shortmess:append "c"                           -- don't give |ins-comple
 vim.opt.iskeyword:append "-"                           -- hyphenated words recognized by searches
 vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
-
-
---- Personal configuration
-vim.wo.number = true
-vim.wo.relativenumber = true
 
 
 if vim.loop.os_uname().sysname == "Windows_NT" then

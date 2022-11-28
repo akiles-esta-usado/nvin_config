@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-toggleterm.setup({
+local toggleterm_options = {
 	size = 20,
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
@@ -24,7 +24,16 @@ toggleterm.setup({
 			background = "Normal",
 		},
 	},
-})
+}
+
+toggleterm_options.direction = "vertical"
+
+if toggleterm_options.direction == "vertical"  then
+    toggleterm_options.size = 80
+end
+
+
+toggleterm.setup(toggleterm_options)
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}

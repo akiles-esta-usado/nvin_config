@@ -1,5 +1,5 @@
-
 # Akiles personal Lua Configuration based on "Neovim from scratch"
+
 Maybe someday it will have some relevant changes...
 
 Clone on this location:
@@ -7,6 +7,34 @@ Clone on this location:
 **Windows**: `C:/Users/<USER>/AppData/Local/nvim/`
 
 Linux: `~/.nvim ? I don't now, google it`
+
+## State of configuration
+
+* [ ] Watch: Setting Options
+* [ ] Watch: Custom Keymaps
+* [ ] Watch: Plugin Deep Dive
+* [ ] Watch: Colorscheme
+* [ ] Watch: Completion
+* [ ] Watch: Fonts
+* [ ] Watch: LSP Setup
+* [ ] Watch: Telescope
+* [ ] Watch: Treesitter
+* [ ] Watch: Q&A
+* [ ] Watch: Autopair close
+* [ ] Watch: Comments
+* [ ] Watch: Git plugin
+* [ ] Watch: NvimTree
+* [ ] Watch: Bufferline
+* [ ] Watch: Null-LS Formatting
+* [ ] Watch: Toggleterm
+* [ ] Watch: [Setup Neovim Complete Guide](https://www.youtube.com/watch?v=vdn_pKJUda8)
+* [ ] Watch: [10 Advance Vim Features](https://www.youtube.com/watch?v=gccGjwTZA7k)
+* [ ] Add Markdown Viewer, or integrate vimwiki
+* [ ] Add Platformio as optional dependency
+* [ ] Add conda support, python environments.
+* [ ] Study and integrate Debug Adapter Protocol plugin. Vimspector or nvim-dap
+
+
 
 
 ## Original Description
