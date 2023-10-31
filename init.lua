@@ -5,13 +5,18 @@ end
 -- https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ
 require "user.options"
 require "user.plugins"
+-- require "user.plugins-lazy"
 require "user.colorscheme"
 require "user.treesitter"
 require "user.lsp"
 require "user.telescope"
 require "user.vimwiki"
+require "user.neorg"
+-- require "user.sudoku"
+require "user.table-mode"
 
 
+-- require "user.nvim-tree"
 
 --[[
 require "user.keymaps"
@@ -24,7 +29,6 @@ require "user.autopairs"
 require "user.comment"
 
 -- https://www.youtube.com/watch?v=SpexCBrZ1pQ&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ&index=16
-require "user.nvim-tree"
 
 -- https://www.youtube.com/watch?v=vJAmjAax2H0
 require "user.bufferline"

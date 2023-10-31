@@ -147,3 +147,11 @@ vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins f
 
 
 ]]--
+
+-----------------------------------------------------------
+-- Personal
+-----------------------------------------------------------
+
+vim.wo.conceallevel = 2
+opt.autoindent = true
+g.autochdir = true

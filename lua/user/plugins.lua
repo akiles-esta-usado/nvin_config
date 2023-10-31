@@ -19,7 +19,7 @@ end
 vim.cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
   augroup end
 ]])
 
@@ -45,8 +45,8 @@ return packer.startup(function(use)
   -- use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
   -- use { "numToStr/Comment.nvim" }
   -- use { "JoosepAlviste/nvim-ts-context-commentstring" }
-  -- use { "kyazdani42/nvim-web-devicons" }
-  -- use { "kyazdani42/nvim-tree.lua" }
+  use { "kyazdani42/nvim-web-devicons" }
+  use { "kyazdani42/nvim-tree.lua" }
   use { "akinsho/bufferline.nvim" }
 	-- use { "moll/vim-bbye" }
   use { "nvim-lualine/lualine.nvim" }
@@ -79,12 +79,8 @@ return packer.startup(function(use)
 	-- use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   -- use { "RRethy/vim-illuminate" }
 
-	-- Telescope
 	use { "nvim-telescope/telescope.nvim" }
-
-	-- Treesitter
-	use {
-		'nvim-treesitter/nvim-treesitter',
+	use { 'nvim-treesitter/nvim-treesitter',
 		run = function()
       local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
       ts_update()
@@ -111,39 +107,17 @@ return packer.startup(function(use)
 
   use { 'vimwiki/vimwiki' }
 
-  use { "nvim-neorg/neorg",
-    config = function()
-      require('neorg').setup {
-        load = {
-          ["core.defaults"] = {}, -- Loads default behaviour
-          ["core.concealer"] = {}, -- Adds pretty icons to your documents
-          ["core.dirman"] = { -- Manages Neorg workspaces
-            config = {
-              default_workspace = "notes",
-              workspaces = {
-                notes = "~/notes",
-              },
-            },
-          },
-          ["core.esupports.indent"] = {
-            config = {
-              format_on_enter = true,
-              format_on_escape = true,
-            }
-          },
-          ["core.qol.toc"] = {
-            config = {
-              close_after_use = true,
-            }
-          },
-            ["core.summary"] = {},
-          ["core.export"] = {},
-        },
-      }
-    end,
-    run = ":Neorg sync-parsers",
-    requires = "nvim-lua/plenary.nvim",
-  }
+  use { "nvim-neorg/neorg", run = ":Neorg sync-parsers", requires = "nvim-lua/plenary.nvim" }
+
+  use { "dhruvasagar/vim-table-mode" }
+  --[[
+  use { "seandewar/killersheep.nvim" }
+  use { 'ThePrimeagen/vim-be-good' }
+  use { "seandewar/nvimesweeper" }
+  use { "jim-fx/sudoku.nvim" }
+  use { "alec-gibson/nvim-tetris" }
+  use { 'eandrju/cellular-automaton.nvim' }
+  ]]--
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
