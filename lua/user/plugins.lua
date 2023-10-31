@@ -58,6 +58,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
   use { "folke/tokyonight.nvim" }
+  use { "rebelot/kanagawa.nvim" }
   -- use { "lunarvim/darkplus.nvim" }
 
 	-- Cmp 
