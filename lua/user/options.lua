@@ -155,3 +155,6 @@ vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins f
 vim.wo.conceallevel = 2
 opt.autoindent = true
 g.autochdir = true
+g.mapleader = " "
+-- opt.scrolloff = 8
+-- opt.sidescrolloff = 8

@@ -37,6 +37,11 @@ neorg.setup {
     },
     ["core.summary"] = {},
     ["core.export"] = {},
+    ["core.journal"] = {
+        config = {
+            workspace = "notes",
+        }
+    },
     --["core.keybinds"] = {
       --config = {
         --default_keybinds = true,
